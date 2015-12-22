@@ -10,4 +10,71 @@
       <schema id="1" name="ruby_shop_developement"/>
     </database-model>
   </data-source>
+  <data-source name="Rails testing: production" uuid="51d45e25-869d-42ce-b160-4bc221a5aebc">
+    <database-info product="MySQL" version="5.6.27-0ubuntu0.15.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="ruby_shop_production"/>
+    </database-model>
+  </data-source>
+  <data-source name="Rails testing: development" uuid="e2ba9930-6267-4dc8-932e-206b977e4fba">
+    <database-info product="MySQL" version="5.6.27-0ubuntu0.15.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="ruby_shop_developement"/>
+      <table id="2" parent="1" name="products"/>
+      <table id="3" parent="1" name="schema_migrations"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="6" parent="2" name="price">
+        <data-type>decimal(3,3)</data-type>
+      </column>
+      <column id="7" parent="2" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="8" parent="2" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="9" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="10" parent="3" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="11" parent="3" name="unique_schema_migrations">
+        <columns>version</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="12" parent="3" name="unique_schema_migrations">
+        <columns>version</columns>
+        <underlying-index>unique_schema_migrations</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+  <data-source name="Rails testing: test" uuid="5f2c527c-ea7a-4855-9fed-5bf8ce8403a8">
+    <database-info product="MySQL" version="5.6.27-0ubuntu0.15.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="ruby_shop_test"/>
+    </database-model>
+  </data-source>
 </component>

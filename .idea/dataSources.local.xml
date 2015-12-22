@@ -7,5 +7,19 @@
       <schema-pattern>ruby_shop_developement.*</schema-pattern>
       <default-schemas>ruby_shop_developement.*</default-schemas>
     </data-source>
+    <data-source name="Rails testing: production" uuid="51d45e25-869d-42ce-b160-4bc221a5aebc">
+      <user-name>root</user-name>
+      <user-password>dfdbdfdddfcf</user-password>
+    </data-source>
+    <data-source name="Rails testing: development" uuid="e2ba9930-6267-4dc8-932e-206b977e4fba">
+      <user-name>root</user-name>
+      <user-password>dfdbdfdddfcf</user-password>
+      <schema-pattern>ruby_shop_developement.*</schema-pattern>
+      <default-schemas>ruby_shop_developement.*</default-schemas>
+    </data-source>
+    <data-source name="Rails testing: test" uuid="5f2c527c-ea7a-4855-9fed-5bf8ce8403a8">
+      <user-name>root</user-name>
+      <user-password>dfdbdfdddfcf</user-password>
+    </data-source>
   </component>
 </project>
