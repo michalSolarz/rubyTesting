@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - ruby_shop_developement@localhost" uuid="92a52ae5-0f23-4d30-a5da-f6e79d268217">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>ruby_shop_developement.*</schema-pattern>
+      <default-schemas>ruby_shop_developement.*</default-schemas>
+    </data-source>
+  </component>
+</project>
